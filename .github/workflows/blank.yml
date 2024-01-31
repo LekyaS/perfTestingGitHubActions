@@ -1,14 +1,14 @@
-name: Rational Performance Tester
+name: HCL OneTest Performance
 
 on: workflow_dispatch
 
 jobs:
     Performance-Action:
-        name: Rational Performance Tester GitHub Action
+        name: HCL OneTest Performance GitHub Action-Test
         runs-on: self-hosted
         steps:
-         - name: Rational Performance Tester GitHub Action
-           uses: IBM/devopsauto-perftest-actions@v1
+         - name: HCL OneTest Performance GitHub Action-Test
+           uses: LekyaS/onetest-perf-action-test@tag1
            with:
             workspace: D:\Workspace-2024\
             project: PerfTest
